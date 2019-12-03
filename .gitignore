@@ -3,3 +3,4 @@ tsconfig.tsbuildinfo
 lib.js
 store.js
 svelte.js
+node_modules
