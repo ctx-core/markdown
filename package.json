@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/markdown",
-	"version": "8.1.16",
+	"version": "8.1.17",
 	"description": "ctx-core markdown support",
 	"main": "lib.js",
 	"module": "lib.js",
