@@ -31,7 +31,7 @@
 	"dependencies": {
 		"@ctx-core/array": "^15.4.28",
 		"@ctx-core/svelte": "^5.2.6",
-		"marked": "^0.7.0",
+		"marked": "^0.8.0",
 		"svelte": "^3.16.4"
 	},
 	"devDependencies": {
