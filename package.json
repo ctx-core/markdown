@@ -32,7 +32,7 @@
 		"@ctx-core/array": "^15.5.0",
 		"@ctx-core/svelte": "^5.2.6",
 		"marked": "^0.8.0",
-		"svelte": "^3.16.4"
+		"svelte": "^3.16.5"
 	},
 	"devDependencies": {
 		"typescript": "^3.7.3"
