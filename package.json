@@ -32,7 +32,7 @@
 		"@ctx-core/array": "^15.5.15",
 		"@ctx-core/object": "^8.0.8",
 		"@ctx-core/svelte": "^5.3.11",
-		"marked": "^0.8.2",
+		"marked": "^1.0.0",
 		"svelte": "^3.20.1"
 	},
 	"devDependencies": {
