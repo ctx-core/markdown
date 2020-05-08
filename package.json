@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/markdown",
-	"version": "8.2.24",
+	"version": "8.2.25",
 	"description": "ctx-core markdown support",
 	"main": "lib.js",
 	"module": "lib.js",
@@ -31,7 +31,7 @@
 	"dependencies": {
 		"@ctx-core/array": "^15.5.15",
 		"@ctx-core/object": "^8.0.8",
-		"@ctx-core/svelte": "^5.3.12",
+		"@ctx-core/svelte": "^5.3.13",
 		"marked": "^1.0.0",
 		"svelte": "^3.22.2"
 	},
