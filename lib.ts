@@ -7,6 +7,9 @@ const exists = promisify(fs.exists)
 const readdir = promisify(fs.readdir)
 const lstat = promisify(fs.lstat)
 import marked from 'marked'
+export interface Frontmatter {
+	date?:Date
+}
 /**
  * @typedef obj__metadata__content
  * @property {object} metadata
@@ -20,12 +23,12 @@ import marked from 'marked'
  * @param {string} markdown
  * @returns {obj__metadata__content}
  */
-export function _frontmatter__content(markdown) {
+export function _frontmatter__content(markdown:string):{ frontmatter:Frontmatter, content:string } {
 	const match = /---\r?\n([\s\S]+?)\r?\n---/.exec(markdown)
 	if (!match) return { frontmatter: {}, content: markdown }
 	const txt__frontmatter = match && match[1]
 	const content = match && match[0] && markdown.slice(match[0].length)
-	const frontmatter = {}
+	const frontmatter:Frontmatter = {}
 	if (txt__frontmatter) {
 		txt__frontmatter.split('\n').forEach(pair=>{
 			const colonIndex = pair.indexOf(':')

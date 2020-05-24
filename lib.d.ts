@@ -1,3 +1,6 @@
+export interface Frontmatter {
+    date?: Date;
+}
 /**
  * @typedef obj__metadata__content
  * @property {object} metadata
@@ -11,9 +14,9 @@
  * @param {string} markdown
  * @returns {obj__metadata__content}
  */
-export declare function _frontmatter__content(markdown: any): {
-    frontmatter: {};
-    content: any;
+export declare function _frontmatter__content(markdown: string): {
+    frontmatter: Frontmatter;
+    content: string;
 };
 export declare const _h1__frontmatter__content__markdown: typeof _frontmatter__content;
 /**
