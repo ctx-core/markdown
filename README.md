@@ -8,7 +8,6 @@
 
 ```javascript
 // rollup.config.js
-require = require('esm')(module)
 import svelte from 'rollup-plugin-svelte'
 import { _preprocess } from '@ctx-core/svelte/preprocess'
 import { _preprocess__markdown } from '@ctx-core/markdown/svelte'
