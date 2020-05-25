@@ -2,6 +2,7 @@
 	"name": "@ctx-core/markdown",
 	"version": "8.3.0",
 	"description": "ctx-core markdown support",
+	"type": "module",
 	"main": "lib.js",
 	"module": "lib.js",
 	"types": "lib.ts",
