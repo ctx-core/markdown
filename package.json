@@ -33,10 +33,10 @@
 		"@ctx-core/object": "^8.0.14",
 		"@ctx-core/svelte": "^5.3.18",
 		"marked": "^1.1.0",
-		"svelte": "^3.23.0"
+		"svelte": "^3.23.1"
 	},
 	"devDependencies": {
-		"typescript": "^3.9.3"
+		"typescript": "^3.9.5"
 	},
 	"gitHead": "c0a401eb1a61d82fcdc11dd0f4f223679761acae"
 }
