@@ -2,6 +2,20 @@
 	"name": "@ctx-core/markdown",
 	"version": "8.3.43",
 	"description": "ctx-core markdown support",
+	"keywords": [
+		"ctx-core",
+		"logger"
+	],
+	"homepage": "https://github.com/ctx-core/markdown#readme",
+	"bugs": {
+		"url": "https://github.com/ctx-core/markdown/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ctx-core/markdown/issues"
+	},
+	"license": "Apache-2.0",
+	"author": "Brian Takita",
 	"main": "./index.js",
 	"module": "./index.js",
 	"types": "./index.ts",
@@ -9,35 +23,21 @@
 		"build": "npm run clean && npm run compile",
 		"clean": "rm -f tsconfig.tsbuildinfo",
 		"compile": "tsc -b",
-		"prepublishOnly": "npm run compile",
-		"exec": "$@"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ctx-core/markdown/issues"
-	},
-	"keywords": [
-		"ctx-core",
-		"logger"
-	],
-	"author": "Brian Takita",
-	"license": "Apache-2.0",
-	"bugs": {
-		"url": "https://github.com/ctx-core/markdown/issues"
-	},
-	"homepage": "https://github.com/ctx-core/markdown#readme",
-	"publishConfig": {
-		"access": "public"
+		"exec": "$@",
+		"prepublishOnly": "npm run compile"
 	},
 	"dependencies": {
-		"@ctx-core/array": "^17.0.4",
-		"@ctx-core/object": "^10.0.4",
-		"@ctx-core/svelte": "^5.3.36",
+		"@ctx-core/array": "workspace:*",
+		"@ctx-core/object": "workspace:*",
+		"@ctx-core/svelte": "workspace:*",
 		"marked": "^1.1.1",
 		"svelte": "^3.25.0"
 	},
 	"devDependencies": {
 		"typescript": "^4.0.2"
+	},
+	"publishConfig": {
+		"access": "public"
 	},
 	"gitHead": "18a370d7b2da5e5afb1f459fa5965ded74cba948"
 }
