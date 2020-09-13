@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/markdown",
-	"version": "8.3.42",
+	"version": "8.3.43",
 	"description": "ctx-core markdown support",
 	"main": "./index.js",
 	"module": "./index.js",
