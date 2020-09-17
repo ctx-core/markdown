@@ -1,43 +1,43 @@
 {
-	"name": "@ctx-core/markdown",
-	"version": "8.3.43",
-	"description": "ctx-core markdown support",
-	"keywords": [
-		"ctx-core",
-		"logger"
-	],
-	"homepage": "https://github.com/ctx-core/markdown#readme",
-	"bugs": {
-		"url": "https://github.com/ctx-core/markdown/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ctx-core/markdown/issues"
-	},
-	"license": "Apache-2.0",
-	"author": "Brian Takita",
-	"main": "./index.js",
-	"module": "./index.js",
-	"types": "./index.ts",
-	"scripts": {
-		"build": "npm run clean && npm run compile",
-		"clean": "rm -f tsconfig.tsbuildinfo",
-		"compile": "tsc -b",
-		"exec": "$@",
-		"prepublishOnly": "npm run compile"
-	},
-	"dependencies": {
-		"@ctx-core/array": "workspace:*",
-		"@ctx-core/object": "workspace:*",
-		"@ctx-core/svelte": "workspace:*",
-		"marked": "^1.1.1",
-		"svelte": "^3.25.0"
-	},
-	"devDependencies": {
-		"typescript": "^4.0.2"
-	},
-	"publishConfig": {
-		"access": "public"
-	},
-	"gitHead": "18a370d7b2da5e5afb1f459fa5965ded74cba948"
+  "name": "@ctx-core/markdown",
+  "version": "8.3.44",
+  "description": "ctx-core markdown support",
+  "keywords": [
+    "ctx-core",
+    "logger"
+  ],
+  "homepage": "https://github.com/ctx-core/markdown#readme",
+  "bugs": {
+    "url": "https://github.com/ctx-core/markdown/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ctx-core/markdown/issues"
+  },
+  "license": "Apache-2.0",
+  "author": "Brian Takita",
+  "main": "./index.js",
+  "module": "./index.js",
+  "types": "./index.ts",
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -f tsconfig.tsbuildinfo",
+    "compile": "tsc -b",
+    "exec": "$@",
+    "prepublishOnly": "npm run compile"
+  },
+  "dependencies": {
+    "@ctx-core/array": "workspace:*",
+    "@ctx-core/object": "workspace:*",
+    "@ctx-core/svelte": "workspace:*",
+    "marked": "^1.1.1",
+    "svelte": "~3.25.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "18a370d7b2da5e5afb1f459fa5965ded74cba948"
 }
