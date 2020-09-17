@@ -1,6 +1,17 @@
 # @ctx-core/markdown
 
+## 8.3.45
+
+### Patch Changes
+
+- fix: npm run compile: path to tsc
+- Updated dependencies [undefined]
+  - @ctx-core/array@18.0.1
+  - @ctx-core/object@11.0.1
+  - @ctx-core/svelte@5.3.39
+
 ## 8.3.44
+
 ### Patch Changes
 
 - typescript updates
