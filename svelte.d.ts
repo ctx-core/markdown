@@ -12,20 +12,20 @@ declare type Opts__builder = {
  */
 export declare function _markup(opts__builder?: Opts__builder): (opts: any) => Promise<{
     code: string;
-    map: any;
-}>;
+    map: null;
+} | undefined>;
 export declare const markup: (opts: any) => Promise<{
     code: string;
-    map: any;
-}>;
+    map: null;
+} | undefined>;
 export declare const markup__markdown: (opts: any) => Promise<{
     code: string;
-    map: any;
-}>;
+    map: null;
+} | undefined>;
 export declare function _preprocess__markdown(opts__builder?: {}): {
     markup: (opts: any) => Promise<{
         code: string;
-        map: any;
-    }>;
+        map: null;
+    } | undefined>;
 };
 export {};

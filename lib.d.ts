@@ -31,7 +31,7 @@ export declare const _h1__frontmatter__content__markdown: typeof _frontmatter__c
  */
 export declare function _html__markdown(markdown: any): any;
 export declare function _is__code__override(infostring: any): any;
-export declare function _txt__path__file__md__resolve(txt__path: any): Promise<string | false>;
+export declare function _txt__path__file__md__resolve(txt__path: any): Promise<string | false | undefined>;
 /**
  * @typedef opts__dir
  * @property {string} dir
@@ -48,7 +48,7 @@ declare type Opts__dir = {
  * @param {opts__dir} opts__dir
  * @returns {Promise<name__md[]>}
  */
-export declare function _a1__name(opts__dir: Opts__dir): Promise<any[]>;
+export declare function _a1__name(opts__dir: Opts__dir): Promise<unknown[] | undefined>;
 /**
  * @typedef {Function} HTTP_Handler
  */
