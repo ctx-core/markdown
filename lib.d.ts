@@ -48,7 +48,7 @@ declare type Opts__dir = {
  * @param {opts__dir} opts__dir
  * @returns {Promise<name__md[]>}
  */
-export declare function _a1__name(opts__dir: Opts__dir): Promise<unknown[] | undefined>;
+export declare function _a1__name(opts__dir: Opts__dir): Promise<string[] | undefined>;
 /**
  * @typedef {Function} HTTP_Handler
  */

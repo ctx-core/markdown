@@ -1,5 +1,14 @@
 # @ctx-core/markdown
 
+## 9.0.7
+
+### Patch Changes
+
+- stricter type checking of generics
+- Updated dependencies [undefined]
+  - @ctx-core/array@19.0.5
+  - @ctx-core/object@12.0.3
+
 ## 9.0.6
 
 ### Patch Changes
