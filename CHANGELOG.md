@@ -1,5 +1,11 @@
 # @ctx-core/markdown
 
+## 9.0.13
+
+### Patch Changes
+
+- @ctx-core/array@19.0.10
+
 ## 9.0.12
 
 ### Patch Changes
