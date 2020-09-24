@@ -1,5 +1,13 @@
 # @ctx-core/markdown
 
+## 9.0.20
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/object@12.0.11
+  - @ctx-core/array@19.0.17
+
 ## 9.0.19
 
 ### Patch Changes
