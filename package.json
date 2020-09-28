@@ -1,42 +1,42 @@
 {
-	"name": "@ctx-core/markdown",
-	"version": "9.0.25",
-	"description": "ctx-core markdown support",
-	"keywords": [
-		"ctx-core",
-		"logger"
-	],
-	"homepage": "https://github.com/ctx-core/markdown#readme",
-	"bugs": {
-		"url": "https://github.com/ctx-core/markdown/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ctx-core/markdown/issues"
-	},
-	"license": "Apache-2.0",
-	"author": "Brian Takita",
-	"main": "./index.js",
-	"module": "./index.js",
-	"types": "./index.ts",
-	"scripts": {
-		"build": "npm run clean && npm run compile",
-		"clean": "rm -f tsconfig.tsbuildinfo",
-		"compile": "./node_modules/.bin/tsc -b",
-		"exec": "$@",
-		"prepublishOnly": "npm run compile"
-	},
-	"dependencies": {
-		"@ctx-core/array": "workspace:^19.0.20",
-		"@ctx-core/object": "workspace:^13.0.0",
-		"@ctx-core/svelte": "workspace:^6.0.5",
-		"marked": "^1.1.1",
-		"svelte": "3.28.0"
-	},
-	"devDependencies": {
-		"typescript": "^4.0.3"
-	},
-	"publishConfig": {
-		"access": "public"
-	}
+  "name": "@ctx-core/markdown",
+  "version": "9.0.26",
+  "description": "ctx-core markdown support",
+  "keywords": [
+    "ctx-core",
+    "logger"
+  ],
+  "homepage": "https://github.com/ctx-core/markdown#readme",
+  "bugs": {
+    "url": "https://github.com/ctx-core/markdown/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ctx-core/markdown/issues"
+  },
+  "license": "Apache-2.0",
+  "author": "Brian Takita",
+  "main": "./index.js",
+  "module": "./index.js",
+  "types": "./index.ts",
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -f tsconfig.tsbuildinfo",
+    "compile": "./node_modules/.bin/tsc -b",
+    "exec": "$@",
+    "prepublishOnly": "npm run compile"
+  },
+  "dependencies": {
+    "@ctx-core/array": "workspace:^19.0.20",
+    "@ctx-core/object": "workspace:^13.0.0",
+    "@ctx-core/svelte": "workspace:^6.0.5",
+    "marked": "^1.2.0",
+    "svelte": "3.28.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
