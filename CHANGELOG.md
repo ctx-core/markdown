@@ -1,5 +1,14 @@
 # @ctx-core/markdown
 
+## 9.0.28
+
+### Patch Changes
+
+- fix: tsc build issues
+- Updated dependencies [undefined]
+- Updated dependencies [undefined]
+  - @ctx-core/store@23.0.3
+
 ## 9.0.27
 
 ### Patch Changes
