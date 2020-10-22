@@ -1,5 +1,12 @@
 # @ctx-core/markdown
 
+## 9.0.33
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/store@23.0.7
+
 ## 9.0.32
 
 ### Patch Changes
