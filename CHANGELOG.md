@@ -1,5 +1,17 @@
 # @ctx-core/markdown
 
+## 9.0.41
+
+### Patch Changes
+
+- marked: ^1.2.4 -> ^1.2.5
+- typescript: ^4.0.5 -> ^4.1.2
+- Updated dependencies [undefined]
+  - @ctx-core/array@19.0.23
+  - @ctx-core/object@13.0.2
+  - @ctx-core/store@23.0.13
+  - @ctx-core/svelte@6.0.12
+
 ## 9.0.40
 
 ### Patch Changes
