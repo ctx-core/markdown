@@ -1,5 +1,14 @@
 # @ctx-core/markdown
 
+## 9.0.43
+
+### Patch Changes
+
+- svelte: 3.29.7 -> 3.30.0
+- Updated dependencies [undefined]
+  - @ctx-core/store@23.0.15
+  - @ctx-core/svelte@6.0.13
+
 ## 9.0.42
 
 ### Patch Changes
