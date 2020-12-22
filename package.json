@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/markdown",
-	"version": "9.1.14",
+	"version": "9.1.15",
 	"description": "ctx-core markdown support",
 	"keywords": [
 		"ctx-core",
@@ -27,9 +27,9 @@
 		"prepublishOnly": "npm run compile"
 	},
 	"dependencies": {
-		"@ctx-core/array": "workspace:^19.1.11",
-		"@ctx-core/object": "workspace:^15.0.8",
-		"@ctx-core/store": "workspace:^23.1.13",
+		"@ctx-core/array": "workspace:^19.1.12",
+		"@ctx-core/object": "workspace:^15.0.9",
+		"@ctx-core/store": "workspace:^23.1.14",
 		"@ctx-core/svelte": "workspace:^6.1.6",
 		"marked": "^1.2.7",
 		"svelte": "3.31.0"
