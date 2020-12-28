@@ -1,5 +1,18 @@
 # @ctx-core/markdown
 
+## 9.2.0
+
+### Minor Changes
+
+- interface MarkdownFrontmatter
+- export interface markdown_opts_type
+- \_get_segment_a1 as \_get**a1**segment
+- \_resolve_md_file_path_txt as \_txt**path**file**md**resolve
+- \_markdown_html as \_html\_\_markdown
+- \_markdown_name_a1 as \_a1\_\_name
+- \_content_frontmatter as \_frontmatter\_\_content
+- \_is_override_code as \_is**code**override
+
 ## 9.1.16
 
 ### Patch Changes

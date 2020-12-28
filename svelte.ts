@@ -1,7 +1,8 @@
 import marked from 'marked'
 import { extname } from 'path'
-import { _frontmatter__content, _is__code__override } from './lib'
 import '@ctx-core/svelte/preprocess'
+import { _content_frontmatter } from './_content_frontmatter'
+import { _is_override_code } from './_is_override_code'
 const js__exec__route = `
 	import { __frontmatter } from '@ctx-core/markdown/store'
 	__frontmatter.set(frontmatter)
@@ -25,7 +26,7 @@ export function _markup(opts__builder:Opts__builder = {}) {
 	return async opts=>{
 		if (!_match(opts)) return
 		const { content: markdown } = opts
-		const { frontmatter, content } = _frontmatter__content(markdown)
+		const { frontmatter, content } = _content_frontmatter(markdown)
 		const renderer = new marked.Renderer()
 		let js__module = `
 export const frontmatter = ${JSON.stringify(frontmatter)}
@@ -67,7 +68,7 @@ ${html__content}
 			if (infostring === 'js exec frontmatter') {
 				js__exec += `\n${js__exec__route}\n${code || ''}`
 			}
-			if (_is__code__override(infostring)) return ''
+			if (_is_override_code(infostring)) return ''
 			const html = code__default(code, infostring, escaped)
 			return '{@html ' + JSON.stringify(html) + '}'
 		}
