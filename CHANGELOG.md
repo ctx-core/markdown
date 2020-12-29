@@ -1,5 +1,13 @@
 # @ctx-core/markdown
 
+## 9.2.1
+
+### Patch Changes
+
+- @ctx-core/array@19.1.14
+- @ctx-core/object@15.0.11
+- @ctx-core/store@23.1.16
+
 ## 9.2.0
 
 ### Minor Changes
