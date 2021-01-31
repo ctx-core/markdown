@@ -10,8 +10,8 @@
 // rollup.config.js
 import svelte from 'rollup-plugin-svelte'
 import { _preprocess } from '@ctx-core/svelte/preprocess'
-import { _preprocess__markdown } from '@ctx-core/markdown/svelte'
-const preprocess__markdown = _preprocess__markdown()
+import { _markdown_preprocess } from '@ctx-core/markdown/svelte'
+const preprocess__markdown = _markdown_preprocess()
 const preprocess = _preprocess([
 	preprocess__markdown,
 	// ...

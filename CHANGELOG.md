@@ -1,5 +1,19 @@
 # @ctx-core/markdown
 
+## 10.0.0
+
+### Major Changes
+
+- src directory
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/array@20.0.0
+  - @ctx-core/object@17.0.0
+  - @ctx-core/store@24.0.0
+  - @ctx-core/svelte@7.0.0
+
 ## 9.2.25
 
 ### Patch Changes

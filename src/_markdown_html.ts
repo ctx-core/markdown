@@ -5,9 +5,9 @@ import { _is_override_code } from './_is_override_code'
  */
 export function _markdown_html(markdown) {
 	const renderer = new marked.Renderer()
-	renderer.code = code__override
+	renderer.code = override_code
 	return marked(markdown, { renderer })
-	function code__override(code, infostring) {
+	function override_code(code, infostring) {
 		return (
 			_is_override_code(infostring)
 			? ''

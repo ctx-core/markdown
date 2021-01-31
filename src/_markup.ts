@@ -1,78 +1,71 @@
 import marked from 'marked'
 import { extname } from 'path'
-import '@ctx-core/svelte/preprocess'
 import { _content_frontmatter } from './_content_frontmatter'
 import { _is_override_code } from './_is_override_code'
-const js__exec__route = `
+const route_exec_js = `
 	import { __frontmatter } from '@ctx-core/markdown/store'
 	__frontmatter.set(frontmatter)
 	`.trim()
-type Opts__builder = {
-	extension?:string
-	_match?:({ filename: string })=>boolean
-}
 /**
  * Returns a markup preprocessor for svelte-rollup.
- * @param {opts__builder} opts__builder
- * @returns {function(opts__preprocess): {ctx__code__map}}
  */
-export function _markup(opts__builder:Opts__builder = {}) {
+export function _markup(builder_opts:builder_opts_type = {}) {
 	const {
 		extension = '.md',
 		_match =
 			({ filename })=>
 				extname(filename) === extension,
-	} = opts__builder
+	} = builder_opts
 	return async opts=>{
 		if (!_match(opts)) return
 		const { content: markdown } = opts
 		const { frontmatter, content } = _content_frontmatter(markdown)
 		const renderer = new marked.Renderer()
-		let js__module = `
+		let module_js = `
 export const frontmatter = ${JSON.stringify(frontmatter)}
 		`.trim()
-		let js__exec = ''
-		const code__default = renderer.code.bind(renderer)
-		renderer.code = code__override
-		const paragraph__default = renderer.paragraph.bind(renderer)
-		renderer.paragraph = paragraph__override
-		const link__default = renderer.link.bind(renderer)
-		renderer.link = link__override
-		const html__content = marked(content, { renderer })
+		let exec_js = ''
+		const default_code = renderer.code.bind(renderer)
+		renderer.code = override_code
+		const default_paragraph = renderer.paragraph.bind(renderer)
+		renderer.paragraph = override_paragraph
+		const default_link = renderer.link.bind(renderer)
+		renderer.link = override_link
+		const content_html = marked(content, { renderer })
 		const code = `
 ${
-			js__module
+			module_js
 			? `
 <script context=module>
-${js__module}
+${module_js}
 </script>
 			`.trim()
 			: ''
 		}
 <script>
-${js__exec}
+${exec_js}
 </script>
-${html__content}
+${content_html}
 		`.trim()
 		return {
 			code,
 			map: null,
 		}
-		function code__override(code, infostring, escaped) {
+		function override_code(code, infostring, escaped) {
 			if (infostring === 'js module') {
-				js__module += `\n${code || ''}`
+				module_js += `\n${code || ''}`
 			}
 			if (infostring === 'js exec') {
-				js__exec += `\n${code || ''}`
+				exec_js += `\n${code || ''}`
 			}
 			if (infostring === 'js exec frontmatter') {
-				js__exec += `\n${js__exec__route}\n${code || ''}`
+				exec_js += `\n${route_exec_js}\n${code || ''}`
 			}
 			if (_is_override_code(infostring)) return ''
-			const html = code__default(code, infostring, escaped)
+			const html = default_code(code, infostring, escaped)
 			return '{@html ' + JSON.stringify(html) + '}'
 		}
-		function paragraph__override(text) {
+		function override_paragraph(text) {
 			if (
 				/^\s*\{#/.test(text)
 				|| /^\s*\{:/.test(text)
@@ -81,20 +74,21 @@ ${html__content}
 			) {
 				return `${text}\n`
 			}
-			return paragraph__default(text)
+			return default_paragraph(text)
 		}
-		function link__override(href, title, text) {
+		function override_link(href, title, text) {
 			if (/^svelte:/.exec(href)) {
 				return `<${href}>`
 			}
-			return link__default(href, title, text)
+			return default_link(href, title, text)
 		}
 	}
 }
 export const markup = _markup()
-export const markup__markdown = markup
-export function _preprocess__markdown(opts__builder = {}) {
-	return {
-		markup: _markup(opts__builder),
-	}
+type builder_opts_type = {
+	extension?:string
+	_match?:({ filename: string })=>boolean
+}
+export {
+	markup as markup__markdown
 }
