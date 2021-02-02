@@ -1,5 +1,12 @@
 # @ctx-core/markdown
 
+## 10.0.7
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/svelte@7.1.1
+
 ## 10.0.6
 
 ### Patch Changes
