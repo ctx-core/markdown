@@ -1,5 +1,11 @@
 # @ctx-core/markdown
 
+## 10.0.9
+
+### Patch Changes
+
+- marked: ^1.2.8 -> ^1.2.9
+
 ## 10.0.8
 
 ### Patch Changes
