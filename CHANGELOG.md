@@ -1,5 +1,13 @@
 # @ctx-core/markdown
 
+## 10.0.13
+
+### Patch Changes
+
+- @ctx-core/array@20.1.5
+- @ctx-core/object@17.0.3
+- @ctx-core/store@24.0.9
+
 ## 10.0.12
 
 ### Patch Changes
