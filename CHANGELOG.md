@@ -1,5 +1,16 @@
 # @ctx-core/markdown
 
+## 10.0.16
+
+### Patch Changes
+
+- typescript: ^4.1.3 -> ^4.1.4
+- Updated dependencies [undefined]
+  - @ctx-core/array@20.1.7
+  - @ctx-core/object@17.0.5
+  - @ctx-core/store@24.0.12
+  - @ctx-core/svelte@7.1.3
+
 ## 10.0.15
 
 ### Patch Changes
