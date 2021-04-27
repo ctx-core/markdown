@@ -1,5 +1,17 @@
 # @ctx-core/markdown
 
+## 10.0.62
+
+### Patch Changes
+
+- update dependencies
+
+## 10.0.61
+
+### Patch Changes
+
+- update dependencies
+
 ## 10.0.60
 
 ### Patch Changes
