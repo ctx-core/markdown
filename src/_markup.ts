@@ -13,10 +13,10 @@ export function _markup(builder_opts:builder_opts_type = {}) {
 	const {
 		extension = '.md',
 		_match =
-			({ filename })=>
+			({ filename }:_markup_match_params_I)=>
 				extname(filename) === extension,
 	} = builder_opts
-	return async opts=>{
+	return async (opts:_markup_match_params_I)=>{
 		if (!_match(opts)) return
 		const { content: markdown } = opts
 		const { frontmatter, content } = _content_frontmatter(markdown)
@@ -51,7 +51,7 @@ ${content_html}
 			code,
 			map: null,
 		}
-		function override_code(code, infostring, escaped) {
+		function override_code(code:string, infostring:string, escaped:boolean) {
 			if (infostring === 'js module') {
 				module_js += `\n${code || ''}`
 			}
@@ -65,7 +65,7 @@ ${content_html}
 			const html = default_code(code, infostring, escaped)
 			return '{@html ' + JSON.stringify(html) + '}'
 		}
-		function override_paragraph(text) {
+		function override_paragraph(text:string) {
 			if (
 				/^\s*\{#/.test(text)
 				|| /^\s*\{:/.test(text)
@@ -76,7 +76,7 @@ ${content_html}
 			}
 			return default_paragraph(text)
 		}
-		function override_link(href, title, text) {
+		function override_link(href:string, title:string, text:string) {
 			if (/^svelte:/.exec(href)) {
 				return `<${href}>`
 			}
@@ -85,9 +85,13 @@ ${content_html}
 	}
 }
 export const markup = _markup()
-type builder_opts_type = {
+export interface _markup_match_params_I {
+	filename:string
+	content:string
+}
+export interface builder_opts_type {
 	extension?:string
-	_match?:({ filename: string })=>boolean
+	_match?:(params:_markup_match_params_I)=>boolean
 }
 export {
 	markup as markup__markdown

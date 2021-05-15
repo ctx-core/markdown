@@ -3,11 +3,11 @@ import { _is_override_code } from './_is_override_code'
 /**
  * Returns html from the given markdown
  */
-export function _markdown_html(markdown) {
+export function _markdown_html(markdown:string) {
 	const renderer = new marked.Renderer()
 	renderer.code = override_code
 	return marked(markdown, { renderer })
-	function override_code(code, infostring) {
+	function override_code(code:string, infostring:string) {
 		return (
 			_is_override_code(infostring)
 			? ''

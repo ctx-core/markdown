@@ -1,5 +1,6 @@
 // See https://github.com/sveltejs/sapper.svelte.dev/blob/master/src/routes/guide/_process_markdown.js
 import { join, resolve } from 'path'
+import type { Request, Response } from 'express'
 import type { markdown_opts_type } from './markdown_opts_type'
 import { _markdown_name_a1 } from './_markdown_name_a1'
 import { _resolve_md_file_path_txt } from './_resolve_md_file_path_txt'
@@ -11,9 +12,10 @@ import { _resolve_md_file_path_txt } from './_resolve_md_file_path_txt'
  */
 export function _get_segment_a1(opts:markdown_opts_type) {
 	const { dir } = opts
-	return async (req, res)=>{
+	return async (req:Request<_get_segment_a1_req_I>, res:Response)=>{
 		const { params } = req
-		const { segment_a1 } = params
+		// params.segment_a1
+		const segment_a1 = params.segment_a1 as string[]
 		const path = segment_a1.join('/')
 		const source_path = join(dir, path)
 		const resolve_source_path = resolve(source_path)
@@ -25,7 +27,7 @@ export function _get_segment_a1(opts:markdown_opts_type) {
 			res.end('Forbidden')
 			return
 		}
-		const headers = {
+		const headers:Record<string, string> = {
 			'Content-Type': 'application/json',
 		}
 		const NODE_ENV = process.env.NODE_ENV
@@ -60,6 +62,7 @@ export function _get_segment_a1(opts:markdown_opts_type) {
 		}))
 	}
 }
+export type _get_segment_a1_req_I = Record<string, { [key:string]:string }|string[]>
 export {
 	_get_segment_a1 as _get__a1__segment
 }

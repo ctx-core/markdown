@@ -9,10 +9,10 @@ export function _content_frontmatter(markdown:string):content_frontmatter_type {
 	const content = match && match[0] && markdown.slice(match[0].length)
 	const frontmatter:MarkdownFrontmatter = {}
 	if (frontmatter_txt) {
-		frontmatter_txt.split('\n').forEach(pair=>{
-			const colonIndex = pair.indexOf(':')
-			frontmatter[pair.slice(0, colonIndex).trim()] = pair
-				.slice(colonIndex + 1)
+		frontmatter_txt.split('\n').forEach((pair:string)=>{
+			const colon_idx:number = pair.indexOf(':')
+			frontmatter[pair.slice(0, colon_idx).trim()] = pair
+				.slice(colon_idx + 1)
 				.trim()
 		})
 	}
