@@ -6,6 +6,7 @@ export * from './_markdown_name_a1';
 export * from './_markdown_preprocess';
 export * from './_markup';
 export * from './_resolve_md_file_path_txt';
+export * from './markdown_Ctx';
 export * from './markdown_frontmatter_b';
 export * from './markdown_opts_type';
 export * from './MarkdownFrontmatter';
