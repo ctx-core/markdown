@@ -1,5 +1,16 @@
 # @ctx-core/markdown
 
+## 10.2.3
+
+### Patch Changes
+
+- types: ./src/index.d.ts: address error TS2742 issue
+- Updated dependencies [undefined]
+  - @ctx-core/array@20.3.10
+  - @ctx-core/object@18.0.6
+  - @ctx-core/store@24.8.10
+  - @ctx-core/svelte@7.3.3
+
 ## 10.2.2
 
 ### Patch Changes
