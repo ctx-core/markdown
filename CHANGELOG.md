@@ -1,5 +1,16 @@
 # @ctx-core/markdown
 
+## 10.3.1
+
+### Patch Changes
+
+- .gitignore: - \*.js
+- Updated dependencies [undefined]
+  - @ctx-core/array@20.4.1
+  - @ctx-core/object@18.1.1
+  - @ctx-core/store@24.9.1
+  - @ctx-core/svelte@7.4.1
+
 ## 10.3.0
 
 ### Minor Changes
