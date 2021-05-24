@@ -1,5 +1,19 @@
 # @ctx-core/markdown
 
+## 10.3.0
+
+### Minor Changes
+
+- dist,types directory: addressing typescript build issues
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/array@20.4.0
+  - @ctx-core/object@18.1.0
+  - @ctx-core/store@24.9.0
+  - @ctx-core/svelte@7.4.0
+
 ## 10.2.3
 
 ### Patch Changes
