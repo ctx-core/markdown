@@ -12,5 +12,5 @@ export async function _resolve_md_file_path_txt(path_txt: string) {
 	return resolve_path_txt
 }
 export {
-	_resolve_md_file_path_txt as _txt__path__file__md__resolve
+	_resolve_md_file_path_txt as _txt__file_path__md__resolve
 }

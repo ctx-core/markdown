@@ -25,7 +25,7 @@
 		"rootDir": "src",
 		"outDir": "dist",
 		"mapRoot": "dist",
-		"declarationDir": "types",
+		"declarationDir": "dist",
 		"lib": [
 			"dom",
 			"ES2020"
@@ -35,7 +35,7 @@
 	},
 	"exclude": [
 		"node_modules",
-		"types"
+		"dist"
 	],
 	"references": []
 }
