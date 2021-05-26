@@ -1,5 +1,11 @@
 # @ctx-core/markdown
 
+## 10.4.1
+
+### Patch Changes
+
+- @types/express-serve-static-core: ^4.17.19 -> ^4.17.20
+
 ## 10.4.0
 
 ### Minor Changes
