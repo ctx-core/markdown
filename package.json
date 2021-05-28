@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/markdown",
-	"version": "10.4.3",
+	"version": "10.4.5",
 	"description": "ctx-core markdown support",
 	"keywords": [
 		"ctx-core",
@@ -20,21 +20,23 @@
 	"module": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"scripts": {
-		"build": "npm run clean && npm run compile",
+		"build": "npm run clean && npm run generate_ctx_I_file && npm run compile",
 		"clean": "rm -f tsconfig.tsbuildinfo",
 		"compile": "./node_modules/.bin/tsc -b .",
 		"exec": "$@",
-		"prepublishOnly": "npm run compile"
+		"prepublishOnly": "npm run compile",
+		"generate_ctx_I_file": "./node_modules/.bin/generate_ctx_I_file"
 	},
 	"dependencies": {
 		"@ctx-core/array": "workspace:^20.5.1",
 		"@ctx-core/object": "workspace:^18.2.1",
 		"@ctx-core/store": "workspace:^24.10.1",
 		"@ctx-core/svelte": "workspace:^7.5.2",
-		"marked": "^2.0.5",
+		"marked": "^2.0.6",
 		"svelte": "3.38.2"
 	},
 	"devDependencies": {
+		"@ctx-core/dev-tools": "workspace:^4.0.0",
 		"@types/express-serve-static-core": "^4.17.20",
 		"@types/marked": "^2.0.3",
 		"express-serve-static-core": "^0.1.1",

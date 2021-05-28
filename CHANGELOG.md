@@ -1,5 +1,17 @@
 # @ctx-core/markdown
 
+## 10.4.5
+
+### Patch Changes
+
+- - markdown_b_h_b
+
+## 10.4.4
+
+### Patch Changes
+
+- update dependencies
+
 ## 10.4.3
 
 ### Patch Changes

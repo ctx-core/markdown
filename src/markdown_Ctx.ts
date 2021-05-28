@@ -1,4 +1,3 @@
-import type { Writable$ } from '@ctx-core/store'
-export interface markdown_Ctx {
-	markdown_frontmatter?:Writable$<string|undefined>
+import type { markdown_ctx_I } from './markdown_ctx_I.generated'
+export interface markdown_Ctx extends markdown_ctx_I {
 }
