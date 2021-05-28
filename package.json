@@ -28,7 +28,7 @@
 		"generate_ctx_I_file": "./node_modules/.bin/generate_ctx_I_file"
 	},
 	"dependencies": {
-		"@ctx-core/array": "workspace:^20.5.1",
+		"@ctx-core/array": "workspace:^20.5.2",
 		"@ctx-core/object": "workspace:^18.2.1",
 		"@ctx-core/store": "workspace:^24.10.1",
 		"@ctx-core/svelte": "workspace:^7.5.2",
