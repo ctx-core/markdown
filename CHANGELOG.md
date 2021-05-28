@@ -1,5 +1,11 @@
 # @ctx-core/markdown
 
+## 10.4.6
+
+### Patch Changes
+
+- fix: \_h_b_h: return value
+
 ## 10.4.5
 
 ### Patch Changes
