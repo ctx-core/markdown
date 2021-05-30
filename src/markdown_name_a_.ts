@@ -2,14 +2,14 @@ import { basename, extname } from 'path'
 import { promisify } from 'util'
 import fs from 'fs'
 import { filter, map } from '@ctx-core/array'
-import type { markdown_opts_type } from './markdown_opts_type'
+import type { markdown_opts_I } from './markdown_opts_I'
 const exists = promisify(fs.exists)
 const lstat = promisify(fs.lstat)
 const readdir = promisify(fs.readdir)
 /**
  * Returns an array of names for each markdown file in opts
  */
-export async function _markdown_name_a1(opts:markdown_opts_type) {
+export async function markdown_name_a_(opts:markdown_opts_I) {
 	const { dir } = opts
 	if (!await exists(dir)) return
 	const stats = await lstat(dir)
@@ -23,5 +23,6 @@ export async function _markdown_name_a1(opts:markdown_opts_type) {
 	)
 }
 export {
-	_markdown_name_a1 as _a1__name
+	markdown_name_a_ as _markdown_name_a1,
+	markdown_name_a_ as _a1__name,
 }

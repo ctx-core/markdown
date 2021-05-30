@@ -1,7 +1,7 @@
 import marked from 'marked'
 import { extname } from 'path'
-import { _content_frontmatter } from './_content_frontmatter'
-import { _is_override_code } from './_is_override_code'
+import { content_frontmatter_ } from './content_frontmatter_'
+import { is_override_code_ } from './is_override_code_'
 const route_exec_js = `
 	import { __frontmatter } from '@ctx-core/markdown/store'
 	__frontmatter.set(frontmatter)
@@ -9,7 +9,7 @@ const route_exec_js = `
 /**
  * Returns a markup preprocessor for svelte-rollup.
  */
-export function _markup(builder_opts:builder_opts_type = {}) {
+export function markup_(builder_opts:builder_opts_type = {}) {
 	const {
 		extension = '.md',
 		_match =
@@ -19,7 +19,7 @@ export function _markup(builder_opts:builder_opts_type = {}) {
 	return async (opts:_markup_match_params_I)=>{
 		if (!_match(opts)) return
 		const { content: markdown } = opts
-		const { frontmatter, content } = _content_frontmatter(markdown)
+		const { frontmatter, content } = content_frontmatter_(markdown)
 		const renderer = new marked.Renderer()
 		let module_js = `
 export const frontmatter = ${JSON.stringify(frontmatter)}
@@ -61,7 +61,7 @@ ${content_html}
 			if (infostring === 'js exec frontmatter') {
 				exec_js += `\n${route_exec_js}\n${code || ''}`
 			}
-			if (_is_override_code(infostring)) return ''
+			if (is_override_code_(infostring)) return ''
 			const html = default_code(code, infostring, escaped)
 			return '{@html ' + JSON.stringify(html) + '}'
 		}
@@ -84,7 +84,7 @@ ${content_html}
 		}
 	}
 }
-export const markup = _markup()
+export const markup = markup_()
 export interface _markup_match_params_I {
 	filename:string
 	content:string
@@ -94,5 +94,6 @@ export interface builder_opts_type {
 	_match?:(params:_markup_match_params_I)=>boolean
 }
 export {
-	markup as markup__markdown
+	markup_ as _markup,
+	markup as markup__markdown,
 }

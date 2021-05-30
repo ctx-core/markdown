@@ -1,20 +1,21 @@
 import marked from 'marked'
-import { _is_override_code } from './_is_override_code'
+import { is_override_code_ } from './is_override_code_'
 /**
  * Returns html from the given markdown
  */
-export function _markdown_html(markdown:string) {
+export function markdown_html_(markdown:string) {
 	const renderer = new marked.Renderer()
 	renderer.code = override_code
 	return marked(markdown, { renderer })
 	function override_code(code:string, infostring:string) {
 		return (
-			_is_override_code(infostring)
+			is_override_code_(infostring)
 			? ''
 			: code
 		)
 	}
 }
 export {
-	_markdown_html as _html__markdown
+	markdown_html_ as _markdown_html,
+	markdown_html_ as _html__markdown,
 }
