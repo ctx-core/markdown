@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/markdown",
-	"version": "11.0.7",
+	"version": "11.0.8",
 	"description": "ctx-core markdown support",
 	"keywords": [
 		"ctx-core",
@@ -28,11 +28,11 @@
 		"generate_ctx_I_file": "./node_modules/.bin/generate_ctx_I_file"
 	},
 	"dependencies": {
-		"@ctx-core/array": "workspace:^21.0.5",
-		"@ctx-core/object": "workspace:^19.0.2",
-		"@ctx-core/store": "workspace:^25.1.1",
+		"@ctx-core/array": "workspace:^21.1.0",
+		"@ctx-core/object": "workspace:^19.0.3",
+		"@ctx-core/store": "workspace:^25.1.2",
 		"@ctx-core/svelte": "workspace:^8.0.0",
-		"marked": "^2.0.6",
+		"marked": "^2.0.7",
 		"svelte": "3.38.2"
 	},
 	"devDependencies": {
