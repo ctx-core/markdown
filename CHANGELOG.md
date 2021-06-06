@@ -1,5 +1,16 @@
 # @ctx-core/markdown
 
+## 11.0.21
+
+### Patch Changes
+
+- fix: build: clean up old build files in dist
+- Updated dependencies [undefined]
+  - @ctx-core/array@21.2.6
+  - @ctx-core/object@19.1.2
+  - @ctx-core/store@25.1.12
+  - @ctx-core/svelte@8.0.1
+
 ## 11.0.20
 
 ### Patch Changes
