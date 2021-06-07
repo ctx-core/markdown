@@ -1,5 +1,16 @@
 # @ctx-core/markdown
 
+## 11.0.22
+
+### Patch Changes
+
+- version bump: run build
+- Updated dependencies [undefined]
+  - @ctx-core/array@21.2.7
+  - @ctx-core/object@19.1.3
+  - @ctx-core/store@25.1.13
+  - @ctx-core/svelte@8.0.2
+
 ## 11.0.21
 
 ### Patch Changes
