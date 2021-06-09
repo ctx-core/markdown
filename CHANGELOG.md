@@ -1,5 +1,11 @@
 # @ctx-core/markdown
 
+## 11.0.29
+
+### Patch Changes
+
+- fix: B: inferred type issue
+
 ## 11.0.28
 
 ### Patch Changes
