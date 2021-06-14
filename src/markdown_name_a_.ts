@@ -14,10 +14,10 @@ export async function markdown_name_a_(opts:markdown_opts_I) {
 	if (!await exists(dir)) return
 	const stats = await lstat(dir)
 	if (!stats.isDirectory()) return
-	const ext_name_a1 = await readdir(dir)
+	const ext_name_a = await readdir(dir)
 	return (
 		map(
-			filter(ext_name_a1, name=>extname(name) === '.md'),
+			filter(ext_name_a, name=>extname(name) === '.md'),
 			name=>basename(name, '.md')
 		)
 	)

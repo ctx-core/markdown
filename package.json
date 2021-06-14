@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/markdown",
-	"version": "11.0.32",
+	"version": "12.0.0",
 	"description": "ctx-core markdown support",
 	"keywords": [
 		"ctx-core",
@@ -16,9 +16,9 @@
 	},
 	"license": "Apache-2.0",
 	"author": "Brian Takita",
-	"main": "./dist/index.js",
-	"module": "./dist/index.js",
-	"types": "./dist/index.d.ts",
+	"main": "./src/index.js",
+	"module": "./src/index.js",
+	"types": "./src/index.d.ts",
 	"scripts": {
 		"build": "npm run clean && npm run generate_ctx_I_file && npm run compile",
 		"clean": "rm -f tsconfig.tsbuildinfo && rm -f dist/**/*.js && rm -f dist/**/*.d.ts && rm -f dist/**/*.map",
@@ -28,15 +28,15 @@
 		"generate_ctx_I_file": "./node_modules/.bin/generate_ctx_I_file"
 	},
 	"dependencies": {
-		"@ctx-core/array": "workspace:^21.3.3",
-		"@ctx-core/object": "workspace:^19.3.0",
-		"@ctx-core/store": "workspace:^25.1.21",
-		"@ctx-core/svelte": "workspace:^8.0.2",
+		"@ctx-core/array": "workspace:^22.0.0",
+		"@ctx-core/object": "workspace:^20.0.0",
+		"@ctx-core/store": "workspace:^26.0.0",
+		"@ctx-core/svelte": "workspace:^9.0.0",
 		"marked": "^2.0.7",
 		"svelte": "3.38.2"
 	},
 	"devDependencies": {
-		"@ctx-core/dev-tools": "workspace:^5.1.8",
+		"@ctx-core/dev-tools": "workspace:^6.0.0",
 		"@types/express-serve-static-core": "^4.17.21",
 		"@types/marked": "^2.0.3",
 		"express-serve-static-core": "^0.1.1",

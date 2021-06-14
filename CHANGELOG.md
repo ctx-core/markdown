@@ -1,5 +1,19 @@
 # @ctx-core/markdown
 
+## 12.0.0
+
+### Major Changes
+
+- move from dist to src directory
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/array@22.0.0
+  - @ctx-core/object@20.0.0
+  - @ctx-core/store@26.0.0
+  - @ctx-core/svelte@9.0.0
+
 ## 11.0.32
 
 ### Patch Changes
