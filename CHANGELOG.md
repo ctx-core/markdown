@@ -1,5 +1,16 @@
 # @ctx-core/markdown
 
+## 12.0.7
+
+### Patch Changes
+
+- npm run prepare instead of npm run prepublishOnly
+- Updated dependencies [undefined]
+  - @ctx-core/array@22.0.6
+  - @ctx-core/object@20.0.5
+  - @ctx-core/store@26.0.6
+  - @ctx-core/svelte@9.0.5
+
 ## 12.0.6
 
 ### Patch Changes
