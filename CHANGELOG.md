@@ -1,5 +1,16 @@
 # @ctx-core/markdown
 
+## 12.0.13
+
+### Patch Changes
+
+- tsconfig.json: "lib": ["dom", "ESNext"]
+- Updated dependencies [undefined]
+  - @ctx-core/array@22.0.11
+  - @ctx-core/object@20.1.1
+  - @ctx-core/store@26.0.12
+  - @ctx-core/svelte@9.0.10
+
 ## 12.0.12
 
 ### Patch Changes
