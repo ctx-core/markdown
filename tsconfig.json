@@ -23,9 +23,9 @@
 		],
 		"baseUrl": ".",
 		"rootDir": "src",
-		"outDir": "src",
-		"mapRoot": "src",
-		"declarationDir": "src",
+		"outDir": "dist",
+		"mapRoot": "dist",
+		"declarationDir": "dist",
 		"lib": ["dom", "ESNext"],
 		"importsNotUsedAsValues": "error",
 		"strict": true

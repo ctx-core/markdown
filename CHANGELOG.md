@@ -1,5 +1,16 @@
 # @ctx-core/markdown
 
+## 12.0.18
+
+### Patch Changes
+
+- dist directory
+- Updated dependencies [undefined]
+  - @ctx-core/array@22.0.16
+  - @ctx-core/object@20.2.2
+  - @ctx-core/store@26.0.17
+  - @ctx-core/svelte@9.0.11
+
 ## 12.0.17
 
 ### Patch Changes
