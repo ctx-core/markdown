@@ -1,5 +1,11 @@
 # @ctx-core/markdown
 
+## 12.0.28
+
+### Patch Changes
+
+- @types/express-serve-static-core: ^4.17.23 -> ^4.17.24
+
 ## 12.0.27
 
 ### Patch Changes
