@@ -1,5 +1,5 @@
 export * from './markdown_Ctx.js'
-export * from './markdown_ctx_I.generated'
+export * from './markdown_ctx_I.generated.js'
 export * from './content_frontmatter_.js'
 export * from './get_segment_a_.js'
 export * from './is_override_code_.js'
