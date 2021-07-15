@@ -1,9 +1,9 @@
 import marked from 'marked'
 import { extname } from 'path'
-import { content_frontmatter_ } from './content_frontmatter_'
+import { content_frontmatter_ } from './content_frontmatter_.js'
 import { is_override_code_ } from './is_override_code_'
 const route_exec_js = `
-	import { __frontmatter } from '@ctx-core/markdown/store'
+	import { __frontmatter } from '@ctx-core/markdown/store.js'
 	__frontmatter.set(frontmatter)
 	`.trim()
 /**

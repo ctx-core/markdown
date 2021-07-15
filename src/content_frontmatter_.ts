@@ -1,4 +1,4 @@
-import type { MarkdownFrontmatter } from './MarkdownFrontmatter'
+import type { MarkdownFrontmatter } from './MarkdownFrontmatter.js'
 /**
  * Returns `{ metadata, content }`
  */

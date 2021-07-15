@@ -1,9 +1,9 @@
 // See https://github.com/sveltejs/sapper.svelte.dev/blob/master/src/routes/guide/_process_markdown.js
 import { join, resolve } from 'path'
 import type { Request, Response } from 'express'
-import type { markdown_opts_I } from './markdown_opts_I'
-import { markdown_name_a_ } from './markdown_name_a_'
-import { resolve_md_file_path_txt_ } from './resolve_md_file_path_txt_'
+import type { markdown_opts_I } from './markdown_opts_I.js'
+import { markdown_name_a_ } from './markdown_name_a_.js'
+import { resolve_md_file_path_txt_ } from './resolve_md_file_path_txt_.js'
 /**
  * Returns a GET [HTTP_Handler](#HTTP_Handler)
  * that responds with a body__markdown_name_a1__path or a body__ctx__parse__md__path
