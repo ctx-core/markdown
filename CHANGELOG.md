@@ -1,5 +1,16 @@
 # @ctx-core/markdown
 
+## 13.0.5
+
+### Patch Changes
+
+- support cjs & esm: + "exports"
+- Updated dependencies [undefined]
+  - @ctx-core/array@23.0.3
+  - @ctx-core/object@21.0.3
+  - @ctx-core/store@27.0.3
+  - @ctx-core/svelte@10.0.5
+
 ## 13.0.4
 
 ### Patch Changes
