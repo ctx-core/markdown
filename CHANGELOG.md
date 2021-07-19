@@ -1,5 +1,16 @@
 # @ctx-core/markdown
 
+## 13.0.13
+
+### Patch Changes
+
+- exports: + "package.json": "./package.json"
+- Updated dependencies [undefined]
+  - @ctx-core/array@23.0.12
+  - @ctx-core/object@21.0.11
+  - @ctx-core/store@27.0.10
+  - @ctx-core/svelte@10.0.13
+
 ## 13.0.12
 
 ### Patch Changes
