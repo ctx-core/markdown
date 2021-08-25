@@ -1,35 +1,37 @@
 import marked from 'marked'
 import { extname } from 'path'
 import { content_frontmatter_ } from './content_frontmatter_.js'
-import { is_override_code_ } from './is_override_code_'
+import { is_override_code_ } from './is_override_code_.js'
 const route_exec_js = `
-	import { __frontmatter } from '@ctx-core/markdown/store.js'
-	__frontmatter.set(frontmatter)
-	`.trim()
+import { getContext } from 'svelte'
+import { markdown_frontmatter$_b } from '@ctx-core/markdown'
+const ctx = getContext('ctx')
+markdown_frontmatter$_b(ctx).set(frontmatter)
+`.trim()
 /**
  * Returns a markup preprocessor for svelte-rollup.
  */
-export function markup_(builder_opts:builder_opts_type = {}) {
+export function markup_(builder_opts:builder_opts_T = {}) {
 	const {
 		extension = '.md',
-		_match =
-			({ filename }:_markup_match_params_I)=>
-				extname(filename) === extension,
+		match_ = ({ filename }:markup_match_params__I)=>extname(filename) === extension,
 	} = builder_opts
-	return async (opts:_markup_match_params_I)=>{
-		if (!_match(opts)) return
+	return async (opts:markup_match_params__I)=>{
+		if (!match_(opts)) return
 		const { content: markdown } = opts
 		const { frontmatter, content } = content_frontmatter_(markdown)
 		const renderer = new marked.Renderer()
+		const parser = new marked.Parser()
 		let module_js = `
 export const frontmatter = ${JSON.stringify(frontmatter)}
 		`.trim()
 		let exec_js = ''
-		const default_code = renderer.code.bind(renderer)
+		const parser_o = { parser }
+		const default_code = renderer.code.bind(parser_o)
 		renderer.code = override_code
-		const default_paragraph = renderer.paragraph.bind(renderer)
+		const default_paragraph = renderer.paragraph.bind(parser_o)
 		renderer.paragraph = override_paragraph
-		const default_link = renderer.link.bind(renderer)
+		const default_link = renderer.link.bind(parser_o)
 		renderer.link = override_link
 		const content_html = marked(content, { renderer })
 		const code = `
@@ -85,13 +87,13 @@ ${content_html}
 	}
 }
 export const markup = markup_()
-export interface _markup_match_params_I {
+export interface markup_match_params__I {
 	filename:string
 	content:string
 }
-export interface builder_opts_type {
+export interface builder_opts_T {
 	extension?:string
-	_match?:(params:_markup_match_params_I)=>boolean
+	match_?:(params:markup_match_params__I)=>boolean
 }
 export {
 	markup_ as _markup,
