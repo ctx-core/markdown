@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/markdown",
-	"version": "13.0.32",
+	"version": "13.0.33",
 	"description": "ctx-core markdown support",
 	"keywords": [
 		"ctx-core",
@@ -37,20 +37,20 @@
 		"generate_ctx_I_file": "./node_modules/.bin/generate_ctx_I_file"
 	},
 	"dependencies": {
-		"@ctx-core/array": "workspace:^23.0.17",
-		"@ctx-core/object": "workspace:^21.0.16",
-		"@ctx-core/store": "workspace:^27.0.23",
-		"@ctx-core/svelte": "workspace:^10.0.22",
+		"@ctx-core/array": "workspace:^23.0.18",
+		"@ctx-core/object": "workspace:^21.0.17",
+		"@ctx-core/store": "workspace:^27.0.24",
+		"@ctx-core/svelte": "workspace:^10.0.23",
 		"esm": "^3.2.25",
 		"marked": "^3.0.2",
 		"svelte": "3.42.3"
 	},
 	"devDependencies": {
-		"@ctx-core/dev-tools": "workspace:^7.1.1",
+		"@ctx-core/dev-tools": "workspace:^7.1.2",
 		"@types/express-serve-static-core": "^4.17.24",
 		"@types/marked": "^3.0.0",
 		"express-serve-static-core": "^0.1.1",
-		"typescript": "^4.3.5"
+		"typescript": "^4.4.2"
 	},
 	"publishConfig": {
 		"access": "public",
