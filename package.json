@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/markdown",
-	"version": "13.0.38",
+	"version": "13.0.39",
 	"description": "ctx-core markdown support",
 	"keywords": [
 		"ctx-core",
@@ -48,7 +48,7 @@
 	"devDependencies": {
 		"@ctx-core/dev-tools": "workspace:^7.1.3",
 		"@types/express-serve-static-core": "^4.17.24",
-		"@types/marked": "^3.0.0",
+		"@types/marked": "^3.0.1",
 		"express-serve-static-core": "^0.1.1",
 		"typescript": "^4.4.3"
 	},
