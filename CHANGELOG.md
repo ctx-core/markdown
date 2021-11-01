@@ -1,5 +1,20 @@
 # @ctx-core/markdown
 
+## 13.0.46
+
+### Patch Changes
+
+- typescript: ^4.4.3 -> ^4.4.4
+- svelte: 3.43.1 -> 3.44.0
+- @types/marked: ^3.0.1 -> ^3.0.2
+- marked: ^3.0.7 -> ^3.0.8
+- Updated dependencies [undefined]
+- Updated dependencies [undefined]
+  - @ctx-core/array@23.0.22
+  - @ctx-core/object@21.0.21
+  - @ctx-core/store@27.0.34
+  - @ctx-core/svelte@10.0.30
+
 ## 13.0.45
 
 ### Patch Changes
