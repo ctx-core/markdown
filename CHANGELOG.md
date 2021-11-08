@@ -1,5 +1,11 @@
 # @ctx-core/markdown
 
+## 13.0.50
+
+### Patch Changes
+
+- fix: markup*,markdown_html*: reference to marked function
+
 ## 13.0.49
 
 ### Patch Changes

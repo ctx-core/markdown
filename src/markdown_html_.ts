@@ -1,4 +1,4 @@
-import marked from 'marked'
+import { marked } from 'marked'
 import { is_override_code_ } from './is_override_code_.js'
 /**
  * Returns html from the given markdown
