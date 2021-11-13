@@ -1,5 +1,17 @@
 # @ctx-core/markdown
 
+## 13.0.52
+
+### Patch Changes
+
+- marked: ^4.0.0 -> ^4.0.3
+- @swc/core: ^1.2.107 -> ^1.2.108
+- Updated dependencies
+  - @ctx-core/array@23.0.24
+  - @ctx-core/object@21.0.23
+  - @ctx-core/store@27.0.37
+  - @ctx-core/svelte@10.0.33
+
 ## 13.0.51
 
 ### Patch Changes
