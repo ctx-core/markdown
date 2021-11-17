@@ -1,5 +1,11 @@
 # @ctx-core/markdown
 
+## 13.0.53
+
+### Patch Changes
+
+- resolve*md_file_path_txt*: lstat instead of deprecated exists
+
 ## 13.0.52
 
 ### Patch Changes

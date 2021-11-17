@@ -1,5 +1,5 @@
-import { basename, extname } from 'path'
 import { lstat, readdir } from 'fs/promises'
+import { basename, extname } from 'path'
 import { filter, map } from '@ctx-core/array'
 import type { markdown_opts_I } from './markdown_opts_I.js'
 /**
