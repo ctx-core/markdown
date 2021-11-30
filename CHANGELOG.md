@@ -1,5 +1,33 @@
 # @ctx-core/markdown
 
+## 13.0.56
+
+### Patch Changes
+
+- marked: ^4.0.4 -> ^4.0.5
+- @swc/cli: ^0.1.51 -> ^0.1.52
+- @swc/core: ^1.2.111 -> ^1.2.113
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/array@23.0.27
+  - @ctx-core/object@21.0.26
+  - @ctx-core/store@27.0.40
+  - @ctx-core/svelte@10.0.36
+
+## 13.0.55
+
+### Patch Changes
+
+- marked: ^4.0.3 -> ^4.0.4
+- svelte: 3.44.1 -> 3.44.2
+- @swc/core: ^1.2.110 -> ^1.2.111
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/store@27.0.39
+  - @ctx-core/svelte@10.0.35
+  - @ctx-core/array@23.0.26
+  - @ctx-core/object@21.0.25
+
 ## 13.0.54
 
 ### Patch Changes

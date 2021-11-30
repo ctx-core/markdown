@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/markdown",
-	"version": "13.0.54",
+	"version": "13.0.56",
 	"description": "ctx-core markdown support",
 	"keywords": [
 		"ctx-core",
@@ -36,21 +36,21 @@
 		"generate_ctx_I_file": "swc $(./node_modules/.bin/generate_ctx_I_file | tail -n1) --out-dir dist --source-maps --config-file .swcrc"
 	},
 	"dependencies": {
-		"@ctx-core/array": "workspace:^23.0.25",
-		"@ctx-core/object": "workspace:^21.0.24",
-		"@ctx-core/store": "workspace:^27.0.38",
-		"@ctx-core/svelte": "workspace:^10.0.34",
-		"marked": "^4.0.3",
-		"svelte": "3.44.1"
+		"@ctx-core/array": "workspace:^23.0.27",
+		"@ctx-core/object": "workspace:^21.0.26",
+		"@ctx-core/store": "workspace:^27.0.40",
+		"@ctx-core/svelte": "workspace:^10.0.36",
+		"marked": "^4.0.5",
+		"svelte": "3.44.2"
 	},
 	"devDependencies": {
-		"@ctx-core/dev-tools": "workspace:^7.2.2",
-		"@swc/cli": "^0.1.51",
-		"@swc/core": "^1.2.110",
+		"@ctx-core/dev-tools": "workspace:^7.2.4",
+		"@swc/cli": "^0.1.52",
+		"@swc/core": "^1.2.113",
 		"@types/express-serve-static-core": "^4.17.25",
 		"@types/marked": "^4.0.1",
 		"express-serve-static-core": "^0.1.1",
-		"typescript": "^4.5.2"
+		"typescript": "next"
 	},
 	"publishConfig": {
 		"access": "public",
