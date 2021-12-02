@@ -1,5 +1,18 @@
 # @ctx-core/markdown
 
+## 13.0.57
+
+### Patch Changes
+
+- @swc/core: ^1.2.113 -> ^1.2.116
+- marked: ^4.0.5 -> ^4.0.6
+- @types/express-serve-static-core: ^4.17.25 -> ^4.17.26
+- Updated dependencies
+  - @ctx-core/array@23.0.28
+  - @ctx-core/object@21.0.27
+  - @ctx-core/store@27.0.41
+  - @ctx-core/svelte@10.0.37
+
 ## 13.0.56
 
 ### Patch Changes
