@@ -1,5 +1,15 @@
 # @ctx-core/markdown
 
+## 13.0.61
+
+### Patch Changes
+
+- package.json: - "main": explicitly not support cjs
+- Updated dependencies
+  - @ctx-core/array@23.0.32
+  - @ctx-core/store@27.0.45
+  - @ctx-core/svelte@10.0.40
+
 ## 13.0.60
 
 ### Patch Changes
