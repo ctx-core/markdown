@@ -44,7 +44,7 @@
 		"svelte": "3.44.2"
 	},
 	"devDependencies": {
-		"@ctx-core/dev-tools": "workspace:^7.2.7",
+		"@ctx-core/dev-tools": "workspace:^7.2.8",
 		"@swc/cli": "^0.1.52",
 		"@swc/core": "^1.2.118",
 		"@types/express-serve-static-core": "^4.17.26",
