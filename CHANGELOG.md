@@ -1,5 +1,21 @@
 # @ctx-core/markdown
 
+## 14.0.0
+
+### Major Changes
+
+- \*\_b: ctx is a map: @ctx-core/object: 22.0.0
+
+### Patch Changes
+
+- package.json: - module
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/object@22.0.0
+  - @ctx-core/array@23.0.33
+  - @ctx-core/store@27.0.46
+  - @ctx-core/svelte@10.0.41
+
 ## 13.0.61
 
 ### Patch Changes
