@@ -1,5 +1,16 @@
 # @ctx-core/markdown
 
+## 14.0.6
+
+### Patch Changes
+
+- \*.d.ts export
+- Updated dependencies
+  - @ctx-core/array@23.0.37
+  - @ctx-core/object@22.0.4
+  - @ctx-core/store@27.0.51
+  - @ctx-core/svelte@10.0.46
+
 ## 14.0.5
 
 ### Patch Changes
