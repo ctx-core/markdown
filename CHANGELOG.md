@@ -1,5 +1,16 @@
 # @ctx-core/markdown
 
+## 14.0.3
+
+### Patch Changes
+
+- package.json: svelte: ./dist/index.js
+- Updated dependencies
+  - @ctx-core/array@23.0.34
+  - @ctx-core/object@22.0.1
+  - @ctx-core/store@27.0.48
+  - @ctx-core/svelte@10.0.43
+
 ## 14.0.2
 
 ### Patch Changes

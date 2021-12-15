@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/markdown",
-	"version": "14.0.2",
+	"version": "14.0.3",
 	"description": "ctx-core markdown support",
 	"keywords": [
 		"ctx-core",
@@ -32,10 +32,10 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/array": "workspace:^23.0.33",
-		"@ctx-core/object": "workspace:^22.0.0",
-		"@ctx-core/store": "workspace:^27.0.47",
-		"@ctx-core/svelte": "workspace:^10.0.42",
+		"@ctx-core/array": "workspace:^23.0.34",
+		"@ctx-core/object": "workspace:^22.0.1",
+		"@ctx-core/store": "workspace:^27.0.48",
+		"@ctx-core/svelte": "workspace:^10.0.43",
 		"marked": "^4.0.7",
 		"svelte": "^3.44.3"
 	},
@@ -51,5 +51,6 @@
 	"publishConfig": {
 		"access": "public",
 		"cache": "~/.npm"
-	}
+	},
+	"svelte": "./dist/index.js"
 }
