@@ -1,5 +1,16 @@
 # @ctx-core/markdown
 
+## 14.0.5
+
+### Patch Changes
+
+- fix: tsconfig.json: "rootDir": "."
+- Updated dependencies
+  - @ctx-core/array@23.0.36
+  - @ctx-core/object@22.0.3
+  - @ctx-core/store@27.0.50
+  - @ctx-core/svelte@10.0.45
+
 ## 14.0.4
 
 ### Patch Changes

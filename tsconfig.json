@@ -22,7 +22,7 @@
 			"node_modules/@types"
 		],
 		"baseUrl": ".",
-		"rootDir": "src",
+		"rootDir": ".",
 		"outDir": "dist",
 		"mapRoot": "",
 		"declarationDir": "dist",
