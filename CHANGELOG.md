@@ -1,5 +1,16 @@
 # @ctx-core/markdown
 
+## 14.0.8
+
+### Patch Changes
+
+- package.json: "types": "./src/index.ts": better editing experience
+- Updated dependencies
+  - @ctx-core/array@23.0.39
+  - @ctx-core/object@22.0.6
+  - @ctx-core/store@27.0.53
+  - @ctx-core/svelte@10.0.48
+
 ## 14.0.7
 
 ### Patch Changes
