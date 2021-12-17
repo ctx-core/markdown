@@ -1,5 +1,16 @@
 # @ctx-core/markdown
 
+## 14.0.7
+
+### Patch Changes
+
+- fix: build
+- Updated dependencies
+  - @ctx-core/array@23.0.38
+  - @ctx-core/object@22.0.5
+  - @ctx-core/store@27.0.52
+  - @ctx-core/svelte@10.0.47
+
 ## 14.0.6
 
 ### Patch Changes

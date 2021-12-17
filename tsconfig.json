@@ -22,9 +22,8 @@
 			"node_modules/@types"
 		],
 		"baseUrl": ".",
-		"rootDir": ".",
+		"rootDir": "src",
 		"outDir": "dist",
-		"mapRoot": "",
 		"declarationDir": "dist",
 		"lib": ["dom", "ESNext"],
 		"importsNotUsedAsValues": "error",
