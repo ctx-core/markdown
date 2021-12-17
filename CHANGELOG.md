@@ -1,5 +1,16 @@
 # @ctx-core/markdown
 
+## 14.0.9
+
+### Patch Changes
+
+- tsconfig.json: "target": "ES2021"
+- Updated dependencies
+  - @ctx-core/array@23.0.40
+  - @ctx-core/object@22.0.7
+  - @ctx-core/store@27.0.54
+  - @ctx-core/svelte@10.0.49
+
 ## 14.0.8
 
 ### Patch Changes
