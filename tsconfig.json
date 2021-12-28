@@ -23,15 +23,15 @@
 		],
 		"baseUrl": ".",
 		"rootDir": "src",
-		"outDir": "dist",
-		"declarationDir": "dist",
+		"outDir": "lib",
+		"declarationDir": "lib",
 		"lib": ["dom", "ESNext"],
 		"importsNotUsedAsValues": "error",
 		"strict": true
 	},
 	"exclude": [
 		"node_modules",
-		"dist"
+		"lib"
 	],
 	"references": []
 }
