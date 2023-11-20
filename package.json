@@ -32,7 +32,8 @@
 		"compile:source": "swc src --out-dir lib --copy-files --source-maps --config-file .swcrc",
 		"compile:declaration": "npm run clean:tsbuildinfo && tsc --declaration --emitDeclarationOnly --declarationDir lib",
 		"exec": "$@",
-		"prepublishOnly": "pnpm clean && pnpm build"
+		"prepublishOnly": "pnpm clean && pnpm build",
+		"test": ":"
 	},
 	"dependencies": {
 		"@ctx-core/array": "^23.0.41",
