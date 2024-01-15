@@ -1,6 +1,6 @@
 // See https://github.com/sveltejs/sapper.svelte.dev/blob/master/src/routes/guide/_process_markdown.js
 import type { Request, Response } from 'express'
-import { join, resolve } from 'path'
+import { join, resolve } from 'node:path'
 import { markdown_name_a_ } from './markdown_name_a_.js'
 import type { markdown_opts_I } from './markdown_opts_I.js'
 import { resolve_md_file_path_txt_ } from './resolve_md_file_path_txt_.js'

@@ -1,6 +1,6 @@
-import { lstat, readdir } from 'fs/promises'
-import { basename, extname } from 'path'
-import { filter, map } from '@ctx-core/array'
+import { filter, map } from 'ctx-core/array'
+import { lstat, readdir } from 'node:fs/promises'
+import { basename, extname } from 'node:path'
 import type { markdown_opts_I } from './markdown_opts_I.js'
 /**
  * Returns an array of names for each markdown file in opts

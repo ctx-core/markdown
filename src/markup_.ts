@@ -1,5 +1,5 @@
 import { marked } from 'marked'
-import { extname } from 'path'
+import { extname } from 'node:path'
 import { content_frontmatter_ } from './content_frontmatter_.js'
 import { is_override_code_ } from './is_override_code_.js'
 const route_exec_js = `
